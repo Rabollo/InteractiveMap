@@ -4,7 +4,7 @@
 //  
 //  Created by ISMAIL BULUC on 2015-05-06.
 //  Copyright 2015 ISMAIL BULUC. All rights reserved.
-// 
+// ismail
 
 
 var MapModule = require('ti.map');
