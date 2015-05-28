@@ -1,0 +1,1 @@
+function saveplace(e,t){var i="http://dragomen.com/interactivemap/saveplace.php",o=Titanium.Network.createHTTPClient(),a={userID:t,placeID:e};o.onload=function(){alert("The place has been saved on your list.")},o.onerror=function(e){alert("Network error "+e.error)},o.open("POST",i),o.send(a)}

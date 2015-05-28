@@ -1,0 +1,1 @@
+function removeSavedPlace(e,t){var i="http://dragomen.com/interactivemap/removesavedplace.php",o=Titanium.Network.createHTTPClient(),a={userID:t,placeID:e};o.onload=function(){alert("A place has been removed.")},o.onerror=function(e){alert("Network error "+e.error)},o.open("POST",i),o.send(a)}

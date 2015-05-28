@@ -81,10 +81,12 @@ var detailsWindowButtonSet;function createDetailsWindowObjects(searchID){
 				leaveATip.setRightNavButton(saveButton);
 				saveButton.addEventListener('click', function(e){ 
 				    if(commentBox.value == ""){
-				        alert("!!");
+				        alert("You con not send empty comment.");
 				    }else{
-				        alert("Data sent");
-				        navWin.close(); 
+				        //alert(commentBox.value + " UID: " + userID + " PID: " +placeID);
+				        sendComment(placeID,userID,commentBox.value);
+				        navWin.close();
+				        createDetailsWindowLoadComments(id);
 				    }
 				});
 				var commentBoxLabel  = Titanium.UI.createLabel({
@@ -97,8 +99,7 @@ var detailsWindowButtonSet;function createDetailsWindowObjects(searchID){
 
 				var commentBox  = Titanium.UI.createTextArea({
 					font:{fontSize:24},
-					height:"30%",
-					width:"100%",
+					height:"30%",width:"100%",
 					top:"9%"
 				});
 				leaveATip.add(commentBox);
@@ -110,13 +111,12 @@ var detailsWindowButtonSet;function createDetailsWindowObjects(searchID){
 					commentBox.focus();
 				});
 
-
 				navWin.open({
 						modalTransitionStyle: Ti.UI.iPhone.MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL,
 						modalStyle: Ti.UI.iPhone.MODAL_PRESENTATION_PAGESHEET
 				});
 			} else if (e.index == 2){// Save
-				alert("Clicked Save Button");
+				saveplace(placeID,userID);
 			}
 		});
 					

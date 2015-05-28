@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>ismailbuluc</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description>Interactive Map</description>
     <copyright>2015 by ismailbuluc</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -60,7 +60,7 @@
         <module platform="android">ti.map</module>
     </modules>
     <deployment-targets>
-        <target device="android">false</target>
+        <target device="android">true</target>
         <target device="blackberry">false</target>
         <target device="ipad">true</target>
         <target device="iphone">true</target>

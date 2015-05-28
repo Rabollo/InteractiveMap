@@ -1,8 +1,9 @@
 {
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"iosSdkVersion": "8.3",
 	"deviceFamily": "universal",
+	"developerName": "ismail buluc (RC4F4V7BGC)",
 	"iosSdkPath": "/Users/ismailbuluc/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
 	"tiCoreHash": "47658db9e85e6b4af144b3d6070d6de0",
 	"modulesHash": "d5c222a41b2cf9500e30a83c91690f78",
@@ -14,11 +15,11 @@
 	"publisher": "ismailbuluc",
 	"url": "http://",
 	"version": "1.0",
-	"description": "undefined",
+	"description": "Interactive Map",
 	"copyright": "2015 by ismailbuluc",
 	"guid": "fee6030a-af45-4a45-b0d9-db6e78d491f0",
-	"skipJSMinification": true,
+	"skipJSMinification": false,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }
