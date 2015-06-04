@@ -1,1 +1,0 @@
-function sendComment(e,t,i){var o="http://dragomen.com/interactivemap/savecomment.php",a=Titanium.Network.createHTTPClient(),n={userID:t,placeID:e,commentValue:i};a.onload=function(){},a.onerror=function(e){alert("Network error "+e.error)},a.open("POST",o),a.send(n)}

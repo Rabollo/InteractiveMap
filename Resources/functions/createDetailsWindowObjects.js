@@ -132,7 +132,7 @@ var detailsWindowButtonSet;function createDetailsWindowObjects(searchID){
 			latitude:json[0].p_lat,longitude:json[0].p_long,
 			title : json[0].p_name,
 			subtitle: json[0].p_description,
-			rightButton: Titanium.UI.iPhone.SystemButton.INFO_LIGHT,
+			//rightButton: Titanium.UI.iPhone.SystemButton.INFO_LIGHT,
 			myid :json[0].p_id
 		});
 		mapview.setLocation({latitude:json[0].p_lat,longitude:json[0].p_long, animate:true,latitudeDelta:0.01, longitudeDelta:0.01});
